@@ -9,14 +9,17 @@
     <style>
         body { font-family: "Noto Sans JP", sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f9f9f9; }
         .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        h1, h2 { text-align: center; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-top: 10px; }
+        h1, h2 { text-align: center; color: #1a1a1a; }
         .price-tag { background: #e63946; color: white; padding: 10px 20px; display: inline-block; font-weight: bold; border-radius: 4px; margin-bottom: 20px; }
         .hero { text-align: center; padding: 60px 20px; background: #fff; border-bottom: 1px solid #eee; }
         .step-item { background: white; padding: 25px; border-radius: 12px; border: 1px solid #eee; text-align: center; margin-bottom: 40px; }
         .step-num { font-weight: bold; color: #e63946; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+        
+        /* 最下部の黒いボックスを完全再現 */
         .cta-section { text-align: center; padding: 60px 20px; background: #1a1a1a; color: white; border-radius: 15px; margin: 40px 0; }
-        .cta-btn { display: inline-block; background: #e63946; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; }
+        .cta-btn { display: inline-block; background: #e63946; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; transition: 0.3s; }
+        .special-note { font-size: 0.8rem; margin-top: 20px; color: #ccc; line-height: 1.8; }
     </style>
 </head>
 <body>
@@ -24,10 +27,10 @@
     <header class="main-header" style="background: #fff; border-bottom: 1px solid #eee; padding: 15px 0;">
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo"><strong>S</strong> たいたんWEB製作所</div>
-            <nav>
-                <a href="index.html" style="margin-left: 20px; text-decoration: none; color: #333;">HOME</a>
-                <a href="service.html" style="margin-left: 20px; text-decoration: none; color: #333;">サービス案内</a>
-                <a href="contact.html" style="margin-left: 20px; text-decoration: none; color: #333;">お問い合わせ</a>
+            <nav class="pc-nav">
+                <a href="index.html" style="margin-left: 20px; text-decoration: none; color: #333; font-weight: bold;">HOME</a>
+                <a href="service.html" style="margin-left: 20px; text-decoration: none; color: #333; font-weight: bold;">サービス案内</a>
+                <a href="contact.html" style="margin-left: 20px; text-decoration: none; color: #333; font-weight: bold;">お申込み・お問い合わせ</a>
             </nav>
         </div>
     </header>
@@ -35,19 +38,62 @@
     <div class="container">
         <section class="hero">
             <div class="price-tag">先着10社限定特別価格 5,000円</div>
-            <img src="design-main.png" alt="メイン画像"> 
-            <h1>5,000円で、一流の佇まいを。</h1>
+            <img src="design-main.png" alt="本格的なプロのデザイン"> 
+            <h1>5,000円で、一流の佇まいを。<br>名刺代わりの1〜3Pサイト。</h1>
+            <p>「安かろう悪かろう」はもう古い。高級店でも胸を張って公開できるクオリティを、最短3日で提供します。</p>
         </section>
 
         <section class="step-section">
-            <div class="step-item">
-                <span class="step-num">STEP 1</span>
-                <p>まずは完成したプロ仕様のサイト。</p>
-                <img src="sample1.png" alt="見本1"> 
+            <h2 style="margin-top: 40px;">SNSを投稿するより、簡単。</h2>
+            <p style="text-align:center;">一度作れば、修正コストは一生「0」です。</p>
+            
+            <div class="step-container">
+                <div class="step-item">
+                    <span class="step-num">STEP 1</span>
+                    <p>まずは完成したプロ仕様のサイト。</p>
+                    <img src="sample1.png" alt="見本1"> 
+                </div>
+
+                <div class="step-item">
+                    <span class="step-num">STEP 2</span>
+                    <p>文字や画像を編集したい場所をタップ。</p>
+                    <img src="sample2.png" alt="見本2"> 
+                </div>
+
+                <div class="step-item">
+                    <span class="step-num">STEP 3</span>
+                    <p>スマホ内の写真を選んで、金額を書き換えるだけ。</p>
+                    <img src="sample3.png" alt="見本3"> 
+                </div>
+
+                <div class="step-item">
+                    <span class="step-num">STEP 4</span>
+                    <p>右下の「確定」ボタンを押せば、即座に保存。</p>
+                    <img src="sample4.png" alt="見本4"> 
+                </div>
+
+                <div class="step-item">
+                    <span class="step-num">STEP 5</span>
+                    <p>完了！メニュー更新もキャンペーン告知も自由自在です。</p>
+                    <img src="sample5.png" alt="見本5"> 
+                </div>
             </div>
-            <div class="step-item">
-                <span class="step-num">STEP 2</span>
-                <p>文字や画像を編集したい場所をタップ。</p>
-                <img src="sample2.png" alt="見本2"> 
-            </div>
-            <div class="step-item">
+        </section>
+
+        <section class="cta-section">
+            <h2 style="color: white; margin-bottom: 10px;">安心の後払い・即日納品</h2>
+            <p style="margin-bottom: 10px;">完成品にご満足いただけた場合のみ、お支払いください。</p>
+            <p style="font-size: 1.4rem; font-weight: bold; color: #ffd166; margin: 15px 0;">当日入金なら、消費税サービスで5,000円ポッキリ！</p>
+            
+            <a href="contact.html" class="cta-btn">今すぐ相談する</a>
+            
+            <p class="special-note">※銀行振込に対応しています。名前は出さず、全力で制作します。</p>
+        </section>
+    </div>
+
+    <footer class="footer" style="text-align: center; padding: 20px; border-top: 1px solid #eee;">
+        <p>&copy; たいたんWEB製作所</p>
+    </footer>
+
+</body>
+</html>
