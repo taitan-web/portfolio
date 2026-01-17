@@ -6,6 +6,17 @@
     <title>サービス案内 | たいたんWEB製作所</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 追加のデザイン調整 */
+        .step-gallery { display: flex; flex-direction: column; gap: 40px; margin-top: 30px; }
+        .step-box { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .step-label { display: inline-block; background: #333; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 15px; }
+        .image-pair { display: flex; gap: 15px; margin-top: 15px; }
+        .image-pair img { width: calc(50% - 7.5px); border: 1px solid #eee; border-radius: 6px; }
+        .campaign-box { background: #fff5f5; border: 2px dashed #e63946; padding: 30px; border-radius: 12px; text-align: center; margin-top: 50px; }
+        .price-large { font-size: 2rem; font-weight: bold; color: #e63946; margin: 10px 0; }
+        @media (max-width: 600px) { .image-pair { flex-direction: column; } .image-pair img { width: 100%; } }
+    </style>
 </head>
 <body>
     <header class="main-header">
@@ -24,26 +35,49 @@
             <h2 class="block-title">制作イメージ・編集方法</h2>
             
             <div class="large-demo-section">
-                <span class="demo-tag">STEP 1：完成イメージ</span>
+                <span class="demo-tag">完成イメージ</span>
                 <h3>本格的なプロのデザイン</h3>
-                <p>飲食店やサロン、士業など各業界に最適な、清潔感とシズル感のあるサイトを作成します。</p>
-                <img src="見本①.png" alt="完成サイト見本" class="giant-sample shadow">
+                <p>5,000円という価格でも、デザインに妥協はありません。高級店や専門職の顔となる、信頼感あるサイトを構築します。</p>
+                <img src="本格的なプロのデザイン.png" alt="プロ仕様デザイン" class="giant-sample shadow">
             </div>
 
-            <div class="large-demo-section border-top-thin">
-                <span class="demo-tag">STEP 2：超簡単な編集機能</span>
-                <h3>画像をドロップするだけで入れ替え</h3>
-                <p>専門知識は不要。「ここを変えたい」と思ったら、画像をドラッグ＆ドロップするだけ。文字も直接打ち換えることが可能です。</p>
-                <img src="見本②.png" alt="編集画面見本" class="giant-sample shadow">
-            </div>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 50px 0;">
 
-            <div class="large-demo-section border-top-thin">
-                <span class="demo-tag">STEP 3：公開もワンボタン</span>
-                <h3>ボタンひとつで即反映</h3>
-                <p>編集が終わったら「確定ボタン」を押すだけ。即座に世界中のスマホやPCに反映されます。</p>
-                <div class="center-box">
-                    <img src="見本③.png" alt="確定ボタン見本" class="confirm-btn-img shadow">
+            <h2 class="block-title">SNS感覚で、驚くほど簡単に更新</h2>
+            <p style="text-align: center; margin-bottom: 30px;">業者への依頼は不要。「ここを変えたい」と思ったら、その場で完了します。</p>
+
+            <div class="step-gallery">
+                <div class="step-box">
+                    <span class="step-label">STEP 1：WEBサイトの画像</span>
+                    <p>まずは、制作したままの綺麗な状態です。</p>
+                    <img src="見本①.png" alt="見本1" style="width: 100%; border-radius: 8px;">
                 </div>
+
+                <div class="step-box">
+                    <span class="step-label">STEP 2：直感的な編集画面</span>
+                    <p>編集モードにして、画像を選んだり、文字を直接打ち替えるだけ。</p>
+                    <div class="image-pair">
+                        <img src="見本②.png" alt="見本2">
+                        <img src="見本③.png" alt="見本3">
+                    </div>
+                </div>
+
+                <div class="step-box">
+                    <span class="step-label" style="background:#e63946;">STEP 3：ボタンひとつで反映</span>
+                    <p>「確定ボタン」を押せば、即座に世界中のスマホやPCに反映されます。</p>
+                    <div class="image-pair">
+                        <img src="見本④.png" alt="見本4">
+                        <img src="見本⑤.png" alt="見本5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="campaign-box">
+                <h3 style="margin: 0; color: #333;">【限定10社】爆速納品キャンペーン</h3>
+                <p style="margin: 10px 0 0;">通常 5,500円（税込）のところ</p>
+                <div class="price-large">当日振込なら 5,000円ポッキリ</div>
+                <p style="font-size: 0.9rem; color: #666;">※内容を確認してからの「後払い」なので安心です。<br>銀行振込に対応しています。</p>
+                <a href="contact.html" class="cta-btn" style="display:inline-block; margin-top:20px; background:#e63946; color:#fff; padding:12px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">お申込み・ご相談はこちら</a>
             </div>
         </div>
     </section>
