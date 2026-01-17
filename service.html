@@ -7,83 +7,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* 追加のデザイン調整 */
-        .step-gallery { display: flex; flex-direction: column; gap: 40px; margin-top: 30px; }
-        .step-box { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .step-label { display: inline-block; background: #333; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 15px; }
-        .image-pair { display: flex; gap: 15px; margin-top: 15px; }
-        .image-pair img { width: calc(50% - 7.5px); border: 1px solid #eee; border-radius: 6px; }
-        .campaign-box { background: #fff5f5; border: 2px dashed #e63946; padding: 30px; border-radius: 12px; text-align: center; margin-top: 50px; }
-        .price-large { font-size: 2rem; font-weight: bold; color: #e63946; margin: 10px 0; }
-        @media (max-width: 600px) { .image-pair { flex-direction: column; } .image-pair img { width: 100%; } }
+        /* 元のデザインをベースに調整 */
+        body { font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f9f9f9; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h1, h2 { text-align: center; color: #1a1a1a; }
+        .price-tag { background: #e63946; color: white; padding: 10px 20px; display: inline-block; font-weight: bold; border-radius: 4px; margin-bottom: 20px; }
+        
+        /* セクション設定 */
+        .hero { text-align: center; padding: 60px 20px; background: #fff; border-bottom: 1px solid #eee; }
+        .hero h1 { font-size: 1.8rem; margin-top: 20px; }
+
+        .step-section { padding: 40px 0; background: #fdfdfd; }
+        .step-container { display: flex; flex-direction: column; gap: 40px; margin-top: 30px; }
+        .step-item { background: white; padding: 25px; border-radius: 12px; border: 1px solid #eee; text-align: center; }
+        .step-num { font-weight: bold; color: #e63946; font-size: 1.2rem; display: block; margin-bottom: 10px; }
+        .step-item p { font-size: 0.95rem; color: #666; margin-bottom: 15px; }
+
+        .cta-section { text-align: center; padding: 60px 20px; background: #1a1a1a; color: white; border-radius: 15px; margin: 40px 0; }
+        .cta-btn { display: inline-block; background: #e63946; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; margin-top: 20px; transition: 0.3s; }
+        .special-note { font-size: 0.8rem; margin-top: 15px; color: #ccc; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.4rem; }
+        }
     </style>
 </head>
 <body>
+
     <header class="main-header">
-        <div class="container flex-header">
+        <div class="container flex-header" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo"><strong>S</strong> たいたんWEB製作所</div>
             <nav class="pc-nav">
-                <a href="index.html">HOME</a>
-                <a href="service.html">サービス案内</a>
-                <a href="contact.html">お申込み・お問い合わせ</a>
+                <a href="index.html" style="margin-left: 20px; text-decoration: none; color: #333; font-weight: bold;">HOME</a>
+                <a href="service.html" style="margin-left: 20px; text-decoration: none; color: #333; font-weight: bold;">サービス案内</a>
+                <a href="contact.html" style="margin-left: 20px; text-decoration: none; color: #333; font-weight: bold;">お申込み・お問い合わせ</a>
             </nav>
         </div>
     </header>
 
-    <section class="content-block">
-        <div class="container">
-            <h2 class="block-title">制作イメージ・編集方法</h2>
+    <div class="container">
+        <section class="hero">
+            <div class="price-tag">先着10社限定特別価格 5,000円</div>
+            <img src="design-main.png" alt="本格的なプロのデザイン"> 
+            <h1>5,000円で、一流の佇まいを。<br>名刺代わりの1〜3Pサイト。</h1>
+            <p>「安かろう悪かろう」はもう古い。高級店でも胸を張って公開できるクオリティを、最短3日で提供します。</p>
+        </section>
+
+        <section class="step-section">
+            <h2>SNSを投稿するより、簡単。</h2>
+            <p style="text-align:center;">一度作れば、修正コストは一生「0」です。</p>
             
-            <div class="large-demo-section">
-                <span class="demo-tag">完成イメージ</span>
-                <h3>本格的なプロのデザイン</h3>
-                <p>5,000円という価格でも、デザインに妥協はありません。高級店や専門職の顔となる、信頼感あるサイトを構築します。</p>
-                <img src="本格的なプロのデザイン.png" alt="プロ仕様デザイン" class="giant-sample shadow">
-            </div>
-
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 50px 0;">
-
-            <h2 class="block-title">SNS感覚で、驚くほど簡単に更新</h2>
-            <p style="text-align: center; margin-bottom: 30px;">業者への依頼は不要。「ここを変えたい」と思ったら、その場で完了します。</p>
-
-            <div class="step-gallery">
-                <div class="step-box">
-                    <span class="step-label">STEP 1：WEBサイトの画像</span>
-                    <p>まずは、制作したままの綺麗な状態です。</p>
-                    <img src="見本①.png" alt="見本1" style="width: 100%; border-radius: 8px;">
+            <div class="step-container">
+                <div class="step-item">
+                    <span class="step-num">STEP 1</span>
+                    <p>まずは完成したプロ仕様のサイト。</p>
+                    <img src="sample1.png" alt="見本1"> 
                 </div>
 
-                <div class="step-box">
-                    <span class="step-label">STEP 2：直感的な編集画面</span>
-                    <p>編集モードにして、画像を選んだり、文字を直接打ち替えるだけ。</p>
-                    <div class="image-pair">
-                        <img src="見本②.png" alt="見本2">
-                        <img src="見本③.png" alt="見本3">
-                    </div>
+                <div class="step-item">
+                    <span class="step-num">STEP 2</span>
+                    <p>文字や画像を編集したい場所をタップ。</p>
+                    <img src="sample2.png" alt="見本2"> 
                 </div>
 
-                <div class="step-box">
-                    <span class="step-label" style="background:#e63946;">STEP 3：ボタンひとつで反映</span>
-                    <p>「確定ボタン」を押せば、即座に世界中のスマホやPCに反映されます。</p>
-                    <div class="image-pair">
-                        <img src="見本④.png" alt="見本4">
-                        <img src="見本⑤.png" alt="見本5">
-                    </div>
+                <div class="step-item">
+                    <span class="step-num">STEP 3</span>
+                    <p>スマホ内の写真を選んで、金額を書き換えるだけ。</p>
+                    <img src="sample3.png" alt="見本3"> 
+                </div>
+
+                <div class="step-item">
+                    <span class="step-num">STEP 4</span>
+                    <p>右下の「確定」ボタンを押せば、即座に保存。</p>
+                    <img src="sample4.png" alt="見本4"> 
+                </div>
+
+                <div class="step-item">
+                    <span class="step-num">STEP 5</span>
+                    <p>完了！メニュー更新もキャンペーン告知も自由自在です。</p>
+                    <img src="sample5.png" alt="見本5"> 
                 </div>
             </div>
+        </section>
 
-            <div class="campaign-box">
-                <h3 style="margin: 0; color: #333;">【限定10社】爆速納品キャンペーン</h3>
-                <p style="margin: 10px 0 0;">通常 5,500円（税込）のところ</p>
-                <div class="price-large">当日振込なら 5,000円ポッキリ</div>
-                <p style="font-size: 0.9rem; color: #666;">※内容を確認してからの「後払い」なので安心です。<br>銀行振込に対応しています。</p>
-                <a href="contact.html" class="cta-btn" style="display:inline-block; margin-top:20px; background:#e63946; color:#fff; padding:12px 30px; border-radius:50px; text-decoration:none; font-weight:bold;">お申込み・ご相談はこちら</a>
-            </div>
-        </div>
-    </section>
+        <section class="cta-section">
+            <h2>安心の後払い・即日納品</h2>
+            <p>完成品にご満足いただけた場合のみ、お支払いください。</p>
+            <p style="font-size: 1.3rem; font-weight: bold; color: #ffd166;">当日入金なら、消費税サービスで5,000円ポッキリ！</p>
+            
+            <a href="contact.html" class="cta-btn">今すぐ相談する</a>
+            <p class="special-note">※銀行振込に対応しています。名前は出さず、全力で制作します。</p>
+        </section>
+    </div>
 
-    <footer class="footer">
+    <footer class="footer" style="text-align: center; padding: 20px; border-top: 1px solid #eee;">
         <p>&copy; たいたんWEB製作所</p>
     </footer>
+
 </body>
 </html>
