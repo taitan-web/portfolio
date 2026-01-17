@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>たいたんWEB製作所 | HOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="giant-announcement">
+        <span>【オープン記念】先着10社限定！ 1件 5,000円 で請け負います！</span>
+    </div>
+
+    <header class="main-header">
+        <div class="container flex-header">
+            <div class="logo"><strong>S</strong> たいたんWEB製作所</div>
+            <nav class="pc-nav">
+                <a href="index.html">HOME</a>
+                <a href="service.html">サービス案内</a>
+                <a href="contact.html">お申込み・お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>「自分で直せる」<br>シンプルWebサイト制作</h1>
+            <p>安価・スピード納品・簡単更新。<br>忙しいオーナー様の味方になるサイトをご提案します。</p>
+            <a href="#contact-form" class="hero-button">無料相談・お申込みはこちら</a>
+        </div>
+    </section>
+
+    <section class="content-block">
+        <div class="container">
+            <h2 class="block-title">たいたんWEB製作所の強み</h2>
+            <div class="four-column-grid">
+                <div class="flat-card">
+                    <div class="card-icon">💰</div>
+                    <h3>驚きの低価格</h3>
+                    <p class="card-text">オープン記念5,000円。<br>1〜3Pの構成でコストを最小限に。</p>
+                </div>
+                <div class="flat-card">
+                    <div class="card-icon">✨</div>
+                    <h3>シンプル設計</h3>
+                    <p class="card-text">迷わせない、伝わる。<br>必要な情報だけを美しく配置します。</p>
+                </div>
+                <div class="flat-card">
+                    <div class="card-icon">📱</div>
+                    <h3>スマホで更新</h3>
+                    <p class="card-text">画像や文字の編集はスマホから。<br>SNS感覚でサイトを育てられます。</p>
+                </div>
+                <div class="flat-card">
+                    <div class="card-icon">💪</div>
+                    <h3>初心者歓迎</h3>
+                    <p class="card-text">飲食店、サロン、士業など。<br>ネットが苦手な方も安心です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="content-block border-separator">
+        <div class="container">
+            <h2 class="block-title">無料相談・お問い合わせ</h2>
+            <div class="main-form-box">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label>メールアドレス または 電話番号 <span class="required">必須</span></label>
+                        <input type="text" name="contact" placeholder="example@mail.com / 090-0000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label>店舗名・社名 または 個人名 <span class="required">必須</span></label>
+                        <input type="text" name="name" placeholder="たいたんカフェ / 山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label>お問い合わせ内容 <span class="required">必須</span></label>
+                        <select name="type" required>
+                            <option value="">選択してください</option>
+                            <option value="お申込み">お申込み（5,000円キャンペーン）</option>
+                            <option value="ご相談">まずは相談したい</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>メッセージ</label>
+                        <textarea name="message" rows="5" placeholder="ご相談内容などをご自由にご記入ください。"></textarea>
+                    </div>
+                    <button type="submit" class="submit-large-btn">この内容で送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; たいたんWEB製作所</p>
+    </footer>
+</body>
+</html>

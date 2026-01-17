@@ -1,0 +1,60 @@
+/* 全体設定 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans JP', sans-serif; color: #333; line-height: 1.6; background-color: #fff; scroll-behavior: smooth; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* 巨大なお知らせバー */
+.giant-announcement { background-color: #e84c3d; color: white; text-align: center; padding: 25px 10px; font-size: 24px; font-weight: bold; }
+
+/* ヘッダー */
+.main-header { padding: 20px 0; border-bottom: 1px solid #eee; }
+.flex-header { display: flex; justify-content: space-between; align-items: center; }
+.logo strong { background: #333; color: white; padding: 2px 8px; border-radius: 3px; }
+.pc-nav a { text-decoration: none; color: #666; font-size: 14px; margin-left: 20px; font-weight: bold; }
+.pc-nav a:hover { color: #e84c3d; }
+
+/* ヒーローエリア */
+.hero-section { background: linear-gradient(135deg, #1b305e 0%, #3a539b 40%, #c4733d 85%, #d45d31 100%); padding: 100px 20px; text-align: center; color: white; }
+.hero-content h1 { font-size: 38px; margin-bottom: 20px; }
+.hero-button { display: inline-block; background-color: #e84c3d; color: white; padding: 18px 50px; text-decoration: none; border-radius: 35px; font-weight: bold; margin-top: 30px; }
+
+/* コンテンツ */
+.content-block { padding: 80px 0; }
+.border-separator { border-top: 15px solid #ebeef2; }
+.block-title { text-align: center; margin-bottom: 50px; font-size: 26px; font-weight: bold; }
+.shadow { box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
+
+/* 四列グリッド (HOME用) */
+.four-column-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+.flat-card { border: 1px solid #eee; padding: 30px 20px; text-align: center; }
+.card-icon { font-size: 40px; margin-bottom: 15px; }
+
+/* サービス案内用のでかでか画像設定 */
+.large-demo-section { padding: 60px 0; text-align: center; }
+.border-top-thin { border-top: 1px solid #eee; }
+.demo-tag { display: inline-block; background: #333; color: white; padding: 4px 15px; font-size: 12px; margin-bottom: 15px; }
+.large-demo-section h3 { font-size: 24px; margin-bottom: 15px; }
+.large-demo-section p { max-width: 700px; margin: 0 auto 30px; color: #666; }
+.giant-sample { width: 100%; max-width: 900px; border-radius: 8px; border: 1px solid #ddd; }
+.confirm-btn-img { width: 300px; border-radius: 8px; }
+.center-box { display: flex; justify-content: center; margin-top: 20px; }
+
+/* フォームと問い合わせ */
+.contact-layout-split { display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; }
+.step-box { margin-bottom: 20px; padding: 20px; background: #f8f9fa; border-left: 5px solid #e84c3d; }
+.num { background: #e84c3d; color: white; padding: 2px 8px; border-radius: 50%; margin-right: 10px; }
+.main-form-box { background: #fff; border: 1px solid #ddd; padding: 30px; max-width: 600px; margin: 0 auto; }
+.form-group { margin-bottom: 20px; text-align: left; }
+.form-group label { display: block; font-weight: bold; margin-bottom: 8px; font-size: 14px; }
+.required { color: #e84c3d; font-size: 11px; margin-left: 5px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; }
+.submit-large-btn { width: 100%; background: #333; color: white; padding: 20px; border: none; border-radius: 4px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.submit-large-btn:hover { background: #e84c3d; }
+
+.footer { text-align: center; padding: 40px; background: #333; color: #fff; font-size: 12px; }
+
+@media (max-width: 768px) {
+    .contact-layout-split { grid-template-columns: 1fr; }
+    .hero-content h1 { font-size: 28px; }
+    .giant-announcement { font-size: 18px; }
+}
